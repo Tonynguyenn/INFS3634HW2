@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
@@ -24,33 +23,35 @@ public class FoodInfoActivity extends AppCompatActivity {
 
         Intent intent1 = getIntent();
         itemID = intent1.getIntExtra("itemID", 0);
-
         MenuItem itemMenuObject = itemDatabase.getMenuItemByID(itemID);
 
         ConstraintLayout activity_detail = findViewById(R.id.activity_detail);
 
-        TextView name = activity_detail.findViewById(R.id.name2);
-        name.setText(itemMenuObject.getName());
 
-        ImageView image = activity_detail.findViewById(R.id.image2);
-        image.setImageResource(itemMenuObject.getImage());
+        TextView MenuItemName = activity_detail.findViewById(R.id.name2);
+        MenuItemName.setText(itemMenuObject.getName());
 
-        TextView price = activity_detail.findViewById(R.id.price);
+
+        ImageView itemMenuImage = activity_detail.findViewById(R.id.image2);
+        itemMenuImage.setImageResource(itemMenuObject.getImage());
+
+        TextView itemMenuPrice = activity_detail.findViewById(R.id.price);
         String itemMenuPriceString = "$" + Double.toString(itemMenuObject.getPrice()) + "0";
-        price.setText(itemMenuPriceString);
+        itemMenuPrice.setText(itemMenuPriceString);
 
 
-        TextView description = activity_detail.findViewById(R.id.description);
-        description.setText(itemMenuObject.getDescription());
+        TextView itemMenuDescription = activity_detail.findViewById(R.id.description);
+        itemMenuDescription.setText(itemMenuObject.getDescription());
 
-        final TextView itemQuantity = activity_detail.findViewById(R.id.quantity);
+        final TextView itemMenuQuantity = activity_detail.findViewById(R.id.quantity);
+
         Button plusButton = activity_detail.findViewById(R.id.plusB);
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ++quantity;
                 quantityDisplay = Integer.toString(quantity);
-                itemQuantity.setText(quantityDisplay);
+                itemMenuQuantity.setText(quantityDisplay);
             }
         });
         Button minusButton = activity_detail.findViewById(R.id.minusB);
@@ -62,7 +63,7 @@ public class FoodInfoActivity extends AppCompatActivity {
                 } else {
                     --quantity;
                     quantityDisplay = Integer.toString(quantity);
-                    itemQuantity.setText(quantityDisplay);
+                    itemMenuQuantity.setText(quantityDisplay);
                 }
             }
         });
