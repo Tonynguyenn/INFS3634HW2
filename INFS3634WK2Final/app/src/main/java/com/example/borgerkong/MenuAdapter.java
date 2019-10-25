@@ -31,7 +31,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(context, DetailActivity.class);
+                Intent intent1 = new Intent(context, FoodInfoActivity.class);
                 intent1.putExtra("itemID", position + 1);
                 context.startActivity(intent1);
             }
