@@ -51,7 +51,7 @@ public class DetailActivity extends AppCompatActivity {
 
         final TextView itemMenuQuantity = activity_detail.findViewById(R.id.quantity);
 
-        Button plusButton = activity_detail.findViewById(R.id.plusButton);
+        Button plusButton = activity_detail.findViewById(R.id.plusB);
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class DetailActivity extends AppCompatActivity {
                 itemMenuQuantity.setText(quantityDisplay);
             }
         });
-        Button minusButton = activity_detail.findViewById(R.id.minusButton);
+        Button minusButton = activity_detail.findViewById(R.id.minusB);
         minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

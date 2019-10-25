@@ -39,7 +39,7 @@ public class OrderActivity extends AppCompatActivity {
         totalText.setText(orderTotal);
 
         ConstraintLayout activity_order_header = findViewById(R.id.orderHeader);
-        ImageView returnToMenuButton = activity_order_header.findViewById(R.id.returnToMenuButton);
+        ImageView returnToMenuButton = activity_order_header.findViewById(R.id.returnButton);
         returnToMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
