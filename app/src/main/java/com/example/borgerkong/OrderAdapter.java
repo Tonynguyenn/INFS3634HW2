@@ -65,8 +65,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
 
     public double getOrderTotal() {
         for (int i = 0; i < OrderArray.size(); i++) {
-            MenuItem itemMenuObject = OrderArray.get(i);
-            orderTotal += (itemMenuObject.getOrderQuantity() * itemMenuObject.getPrice());
+            MenuItem menuItemObject = OrderArray.get(i);
+            orderTotal += (menuItemObject.getOrderQuantity() * menuItemObject.getPrice());
         }
         return orderTotal;
     }

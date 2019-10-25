@@ -43,7 +43,7 @@
         android:fontFamily="@font/amiko_bold"
         android:text="Name"
         android:textColor="#000000"
-        android:textSize="48dp"
+        android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="@id/image2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/image2"
@@ -57,7 +57,7 @@
         android:layout_marginTop="24dp"
         android:text="Price"
         android:textColor="#000000"
-        android:textSize="48dp"
+        android:textSize="35dp"
         android:fontFamily="@font/amiko_bold"
         app:layout_constraintStart_toStartOf="@id/image2"
         app:layout_constraintTop_toBottomOf="@id/image2" />
@@ -113,13 +113,14 @@
 
     <TextView
         android:id="@+id/description"
-        android:layout_width="188dp"
-        android:layout_height="71dp"
+        android:layout_width="199dp"
+        android:layout_height="295dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/amiko_bold"
         android:text="Description"
         android:textColor="#000000"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@id/price"
         app:layout_constraintTop_toBottomOf="@id/quantity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

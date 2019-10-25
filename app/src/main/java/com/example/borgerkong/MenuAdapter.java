@@ -24,10 +24,10 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.MenuViewHolder
     }
 
     public void onBindViewHolder(@NonNull final MenuViewHolder holder, final int position) {
-        MenuItem itemMenuObject = MenuItemArray.get(position);
+        MenuItem menuItemObject = MenuItemArray.get(position);
         final Context context = holder.name.getContext();
-        holder.image.setImageResource(itemMenuObject.getImage());
-        holder.name.setText(itemMenuObject.getName());
+        holder.image.setImageResource(menuItemObject.getImage());
+        holder.name.setText(menuItemObject.getName());
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

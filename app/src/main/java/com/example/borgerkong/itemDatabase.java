@@ -25,7 +25,7 @@ public class itemDatabase {
                 R.drawable.steak,
                 "Steak",
                 15.00,
-                "350g rump steak cooked to your liking",
+                "A 350g. Angus top sirloin steak full of flavor and texture. Broiled over open flame to enhance its flavors.",
                 0
         ));
 
@@ -34,7 +34,7 @@ public class itemDatabase {
                 R.drawable.lamb,
                 "Garlic Roasted Lamb",
                 12.50,
-                "Slow roasted garlic lamb chops",
+                "Mouthwatering rosemary & garlic roast lamb paired with roast potatoes and peas",
                 0
         ));
 
@@ -43,7 +43,7 @@ public class itemDatabase {
                 R.drawable.burger,
                 "Obama Burger",
                 7.00,
-                "Wagyu beef patty cooked to medium with 2 slices of American cheese between a potato roll",
+                "beef patty, American cheese, streaky bacon, tomato, lettuce, pickles & burger sauce on a milk bun",
                 0
         ));
 
@@ -77,7 +77,6 @@ public class itemDatabase {
 
 
 
-
         MenuItems.put(6, new MenuItem(
                 6,
                 R.drawable.wrap,
@@ -91,7 +90,7 @@ public class itemDatabase {
                 R.drawable.wrap,
                 "Bacon n egg wrap",
                 5.00,
-                "Rasher bacon with scrambled eggs in a wrap",
+                "Rasher bacon with scrambled eggs in a toasted tortilla wrap",
                 0
         ));
         MenuItems.put(8, new MenuItem(
@@ -115,7 +114,7 @@ public class itemDatabase {
                 R.drawable.chips,
                 "Chips",
                 2.50,
-                "Thick cut fries",
+                "Thick cut french fries served with heinz ketchup",
                 0
         ));
         MenuItems.put(11, new MenuItem(
@@ -123,7 +122,7 @@ public class itemDatabase {
                 R.drawable.onion_rings,
                 "Onion Rings",
                 2.50,
-                "Beer battered onion rings",
+                "Beer battered onion rings served with a side of garlic aioli",
                 0
         ));
         MenuItems.put(12, new MenuItem(
@@ -139,7 +138,7 @@ public class itemDatabase {
                 R.drawable.corndog,
                 "CornDog",
                 4.50,
-                "Hot dog covered in a crispy beer batter",
+                "Hot dog covered in a crispy beer batter served with american mustard and heinz ketchup",
                 0
                 ));
 
@@ -148,7 +147,7 @@ public class itemDatabase {
                 R.drawable.coke,
                 "Coke no sugar",
                 4.00,
-                "500ml bottle of coke",
+                "500ml bottle of Coke",
                 0
 
         ));
